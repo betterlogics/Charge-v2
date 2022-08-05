@@ -1,25 +1,22 @@
+import React from 'react'
 import logo from './logo.svg';
 import './App.css';
+import Withdraw from './Components/Withdraw/Withdraw';
+// import Drawer from './Components/Drawer/Drawer';
+// import Stakes from './Components/Stakes/Stakes';
+// import Transcation from './Components/Transcation/Transcation';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div>
+      {/* <Drawer/> */}
+      {/* <Stakes/> */}
+      {/* <Transcation/> */}
+      <Withdraw/>
 
-export default App;
+
+
+      
+    </div>
+  )
+}

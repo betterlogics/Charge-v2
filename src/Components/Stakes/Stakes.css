@@ -1,0 +1,125 @@
+.Main_stakes{
+    background-color:rgba(0, 0, 0, 0.87);
+    height: auto;   
+    color: white;
+    padding-top: 30px;
+    /* padding-bottom: 200px; */
+}   
+.Stake_footer{
+  display: flex;
+  justify-content: end;
+  height: 100px;
+  padding-right: 20px;
+  align-items: center;
+}
+.icon_sta{
+  font-size: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.drop_sta{
+  color: white;
+  margin-bottom: 10px;
+}
+.drop_sta:hover{
+  color: white;
+}
+.none{
+  display: none;
+}
+
+  .padd{
+    padding: 15% 0px;
+  }
+  .stake_line{
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    background-color: white;
+    width: 100%;
+    height: 1px;
+  }
+  .Extra{
+    padding: 16px;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 0px 20px 20px 0px;
+  }
+  .Word{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  h6{
+    margin: 0%;
+  }
+  .Stake_box{
+    padding-left: 10%;
+    border-radius: 0px!important;
+  }
+  .Stake_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #08d765;
+  }
+  .Table{
+    justify-content: space-around;
+  }
+  .Stake_r{
+    justify-content: space-around;
+    margin-top: 5%;
+  }
+  .Stake_btn:hover{
+    background-color:#343a40;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .Stake_h{
+    font-size: 2.125rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+    color: #08d765;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .Stake_para{
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: #08d765;
+  }
+.Green_div{
+    opacity: 0.8;
+    position: relative;
+    text-align: center;
+    transition: all 0.20s ease-in-out;
+    border-radius: 0;
+    /* background-size: ceover; */
+    justify-content: center;
+    background-color: #08d765;
+    background-image: linear-gradient(45deg,#08d765 0%, #08d765 100%);
+    width: 100%;
+    justify-content: center;
+}
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+  
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;}
+    svg {
+      overflow: hidden;
+      vertical-align: middle;
+  }
