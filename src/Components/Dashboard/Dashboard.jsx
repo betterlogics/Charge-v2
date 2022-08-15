@@ -20,6 +20,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import {BsBookmarks} from "react-icons/bs"
+import "./Dashboard.css"
 function Dashboard() {
   return (
     <div>
@@ -53,9 +54,9 @@ function Dashboard() {
 
               </div>
               <div className='col-6 py-2 my-0 mt-2' >
-                <p  className='m-0'> ChargeV2 Balance</p>
-                <p  className='m-0'>0 ChargeV2 ($0)</p>
-                <p  className='m-0'>0 ChargeV2 ($0)</p>  
+                <p  className='m-0 res_sm'> ChargeV2 Balance</p>
+                <p  className='m-0 res_sm'>0 ChargeV2 ($0)</p>
+                <p  className='m-0 res_sm'>0 ChargeV2 ($0)</p>  
                 </div>
 
              
@@ -74,9 +75,9 @@ function Dashboard() {
 
               </div>
               <div className='col-6 py-2 my-0 mt-2' >
-                <p  className='m-0'> Total Refferal count</p>
-                <p  className='m-0'>0   ($0)</p>
-                <p  className='m-0'>Earnings ($0)</p>  
+                <p  className='m-0 res_sm'> Total Refferal count</p>
+                <p  className='m-0 res_sm'>0   ($0)</p>
+                <p  className='m-0 res_sm'>Earnings ($0)</p>  
                 </div>
 
              
@@ -95,9 +96,9 @@ function Dashboard() {
 
               </div>
               <div className='col-6 py-2 my-0 mt-2' >
-                <p  className='m-0'>Total Earning</p>
-                <p  className='m-0'>0 ChargeV2 ($0)</p>
-                <p  className='m-0'>At stake: ChargeV2 </p>  
+                <p  className='m-0  res_sm'>Total Earning</p>
+                <p  className='m-0 res_sm'>0 ChargeV2 ($0)</p>
+                <p  className='m-0 res_sm'>At stake: ChargeV2 </p>  
                 </div>
 
              

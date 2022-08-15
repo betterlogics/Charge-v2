@@ -37,9 +37,9 @@ function Transcation() {
                 </div>
               </div>
               <div className="col-6 py-2 my-0 mt-2">
-                <p className="m-0"> Total charge v2 balance </p>
-                <p className="m-0">0 ChargeV2 </p>
-                <p className="m-0">selling fast , Buy now</p>
+                <p className="m-0 p-0 res_sm"> Total charge v2 balance </p>
+                <p className="m-0 p-0 res_sm">0 ChargeV2 </p>
+                <p className="m-0 p-0 res_sm">selling fast , Buy now</p>
               </div>
             </div>
           </div>
@@ -59,8 +59,8 @@ function Transcation() {
                 </div>
               </div>
               <div className="col-6 py-0 my-0 mt-4">
-                <p className="m-0 white">Buy</p>
-                <p className="m-0 ">ChargeV2 Tokens ($0)</p>
+                <p className="m-0 white res_sm">Buy</p>
+                <p className="m-0  res_sm">ChargeV2 Tokens ($0)</p>
               </div>
             </div>
           </div>

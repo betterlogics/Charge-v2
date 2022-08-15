@@ -1,0 +1,8 @@
+@media only screen and (max-width:600px) {
+    .res_sm{
+        font-size: 13px !important;
+        /* padding-top: 3px !important; */
+       
+    }
+    
+}

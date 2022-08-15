@@ -39,9 +39,9 @@ function Stakes() {
                 </div>
               </div>
               <div className="col-6 py-0 my-0 mt-3">
-                <p className="m-0"> Your Stakes</p>
-                <p className="m-0">0 ChargeV2 </p>
-                <p className="m-0">3% Daily Rewards</p>
+                <p className="m-0 res_sm"> Your Stakes</p>
+                <p className="m-0 res_sm">0 ChargeV2 </p>
+                <p className="m-0 res_sm">3% Daily Rewards</p>
               </div>
             </div>
           </div>
@@ -73,8 +73,8 @@ function Stakes() {
                 </div>
               </div>
               <div className="col-6 py-0 my-0 mt-4">
-                <p className="m-0">Available Reward</p>
-                <p className="m-0 ">0 ChargeV2 ($0)</p>
+                <p className="m-0 res_sm">Available Reward</p>
+                <p className="m-0 res_sm ">0 ChargeV2 ($0)</p>
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ function Stakes() {
                   </svg>
                 </div>
               </div>
-              <div className="col-6 py-2 my-0 mt-4">
+              <div className="col-6 py-2 my-0 mt-4 idk">
                 
                 <p className="m-0">Maximum Rewards</p>
                 <p className="m-0">0 ChargeV2 </p>

@@ -77,3 +77,10 @@
     margin-top: 15px !important;
 }
 }
+
+@media (min-width:700px) and (max-width:900px)
+{
+    .withdraw_gr{
+        margin-top: 10px;
+    } 
+}
