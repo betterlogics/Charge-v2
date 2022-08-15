@@ -15,8 +15,13 @@
     box-shadow: 2;
     text-align: center;
     border-radius: 20px;
-    margin-right:  4% !important; ;
+    
 }
+.circle{
+    display: flex !important;
+    justify-content: center !important;
+}
+
 .h1s{
     
     font-size: 3rem;

@@ -1,5 +1,5 @@
 .Main_withdraw{
-    background-color: rgba(0, 0, 0, 0.87);
+    /* background-color: rgba(0, 0, 0, 0.87); */
     padding: 100px 0px
 }
 .withdraw_gr{
@@ -22,7 +22,58 @@
 }
 .green_di{
     width: 90px;
-    height: 90px;
+    height: 90px; 
     border-radius: 0;
-    background-color: #08d765;  
+    background-color: #08d765; 
+}
+.withdraw_btn{
+    border-radius: 20px;
+}
+.withdraw_line{
+    background-color: #08d765;
+    width: 100%;
+    height: 1px;
+    margin-top: 3%;
+
+}
+.withdraw_table{
+    font-size: 20px;
+    color: #00FFD2;
+}
+.withdraw_bt{
+    background-color: #08d765;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    color: white;
+}
+.withdraw_bt:hover{
+    background-color:rgba(0, 0, 0, 0.10);
+        margin-bottom: 20px !important;
+    color:white;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)
+}
+.small_p{
+    padding-left: 5%;
+    font-weight: 400;
+    margin-top: 4% !important;
+    /* color: #00FFD2 !important; */
+
+}
+
+
+
+/* meadia quiries      .......... */
+
+@media only screen and (max-width: 600px){
+.withdraw_gr{
+    margin-top: 12px !important;
+}    
+
+.withdraw_bt{
+    margin-bottom: 20px;
+}
+.withdraw_btn{
+    margin-top: 15px !important;
+}
 }

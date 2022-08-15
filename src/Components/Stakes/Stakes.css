@@ -1,9 +1,8 @@
 .Main_stakes{
-    background-color:rgba(0, 0, 0, 0.87);
     height: auto;   
-    color: white;
+    color: white !important;
     padding-top: 30px;
-    /* padding-bottom: 200px; */
+    
 }   
 .Stake_footer{
   display: flex;
@@ -17,10 +16,13 @@
   margin-left: 10px;
   margin-bottom: 10px;
 }
+p{
+  margin: 0 !important;
+}
 
 .drop_sta{
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 10px !important  ;
 }
 .drop_sta:hover{
   color: white;
@@ -33,8 +35,6 @@
     padding: 15% 0px;
   }
   .stake_line{
-    /* padding-top: 20px; */
-    /* padding-bottom: 20px; */
     background-color: white;
     width: 100%;
     height: 1px;
@@ -102,7 +102,7 @@
     text-align: center;
     transition: all 0.20s ease-in-out;
     border-radius: 0;
-    /* background-size: ceover; */
+    
     justify-content: center;
     background-color: #08d765;
     background-image: linear-gradient(45deg,#08d765 0%, #08d765 100%);
@@ -122,4 +122,36 @@
     svg {
       overflow: hidden;
       vertical-align: middle;
+  }
+
+  
+  .table{
+    
+    color: white !important;
+  }
+
+
+
+  /* media quiry............... */
+
+
+
+
+  @media only screen and (max-width:600px)
+  {
+    
+    .table{
+      font-size: 6px;
+      color: white !important;
+    }
+
+    .Table_para1{
+      font-size: 9px;
+    }
+    .drop_sta{
+      margin-top: 6px !important;
+    }
+    .Stake_h{
+      font-size: 2rem;
+    }
   }

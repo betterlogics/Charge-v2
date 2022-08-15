@@ -1,0 +1,108 @@
+.Main_swaping{
+    min-height: 100vh;
+    padding:100px 0px
+}
+.withdraw_gr{
+    opacity: 0.8;
+    position: relative;
+    text-align: center;
+    transition: all 0.20s ease-in-out;
+    border-radius: 0;
+    justify-content: center;
+    background-color: #08d765;
+    background-image: linear-gradient(45deg,#08d765 0%, #08d765 100%);
+    color: white;
+    padding: 8px;
+}
+.swap_btn{
+    background-color: #08d765;
+    width: 100%;
+    color: white;
+    font-size: 22px !important;
+}
+.swap_btn:hover{
+    background-color: rgba(0, 0, 0, 0.10);
+    color: white;
+}
+.swap_r{
+    margin-top: 5%;
+    justify-content: space-around;
+}
+.inner_swap{
+    display: flex;
+    padding: 25px;
+    border-bottom: 2px solid #19B5CD;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+
+}
+
+.swap_table{
+   padding: 20px 0px;
+    border-radius: 20px;
+    background-size: cover;
+    margin-top: 4%;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+.swap_bt{
+    border-radius: 20px;
+
+}
+p {
+    color: white;
+}
+
+.swap_line{
+    background-color: white;
+    width: 100%;
+    height: 1px;
+    justify-content: center !important;
+    display: flex !important;
+}
+.wallet_footer{
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+    padding-right: 10px;
+    align-items: center;
+
+}
+.swap_fo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.mas{
+    margin-bottom: 10px!important;
+}
+.mad{
+    margin-top: 8px!important;
+}
+.icon_sta{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .drop_sta{
+    color: white;
+    margin-bottom: 15px !important;
+  }
+  .drop_sta:hover{
+    color: white;
+  }
+
+
+
+  /* media  quriy */
+  @media only screen and (max-width:600px) {
+
+    
+.marg{
+    font-size: 7px !important;
+}
+.mas{
+    font-size: 10px!important;
+}
+    
+  }

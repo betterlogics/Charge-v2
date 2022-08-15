@@ -56,7 +56,6 @@
     color: white;
     display: flex;
     align-items: center;  
-    /* flex-direction: column; */
     justify-content: center;
     background-color: #08d765 !important;
     height: 70px;
@@ -66,37 +65,15 @@
   .fa{
     font-size: 26px;
   }
-  /* .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  } */
+
   .div_text{
-    /* width: 100%; */
     height: auto;
     align-items: center;
     padding-top: 24px;
     border-radius: 0px 20px 20px 0px;
   }
   
-  /* .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  } */
-  
+
   
   .css-2dum1v-MuiDrawer-docked .MuiDrawer-paper {
   
@@ -198,7 +175,6 @@
     margin-left: 20px;
     border: 0;
     height: 1.1876em;
-    /* margin: 0;f */
     display: block;
     padding: 6px 0 7px;
     min-width: 0;

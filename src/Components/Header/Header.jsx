@@ -2,9 +2,16 @@ import React from "react";
 import "./Header.css";
 import logo from "../Assets/logo.png";
 import { ToastContainer, toast } from "react-toastify";
-
+import { useNavigate } from "react-router-dom";
 function Header() {
-  const notify = () => toast.warning("please login 0r install tron wallet");
+  let navigate = useNavigate();
+  const notify = () => {toast.warning("please login 0r install tron wallet")
+
+
+
+  navigate('drawer');
+
+}
 //   toast.success("Success Notification !", {
 //     position: toast.POSITION.TOP_RIGHT
 //   });

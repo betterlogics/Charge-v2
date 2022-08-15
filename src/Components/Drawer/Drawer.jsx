@@ -19,6 +19,12 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import "./Drawer.css";
+import Dashboard from '../Dashboard/Dashboard'
+import Stakes from '../Stakes/Stakes'
+import Transcation from '../Transcation/Transcation'
+import Withdraw from '../Withdraw/Withdraw'
+import Wallet from '../Wallet/Wallet'
+import Swaping from '../Swaping/Swaping'
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import {BsBookmarks} from "react-icons/bs"
 
@@ -91,7 +97,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
   }),
 );
 
-export default function MiniDrawer() {
+export default function MiniDrawer(props) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -114,6 +120,31 @@ export default function MiniDrawer() {
     "fa-regular fa-right-from-bracket fa"
 
   ]
+  
+  React.useEffect(()=>{
+    let icon = document.querySelectorAll('i')
+  icon[0].addEventListener('click',()=>{
+   window.location.href="/drawer"
+  })
+  icon[1].addEventListener('click',()=>{
+   window.location.href="/stakes"
+  })
+  icon[2].addEventListener('click',()=>{
+   window.location.href="/transcation"
+  })
+  icon[3].addEventListener('click',()=>{
+    window.location.href="/Withdraw"
+   })
+   icon[4].addEventListener('click',()=>{
+    window.location.href="/wallet"
+   })
+   icon[5].addEventListener('click',()=>{
+    window.location.href="/swaping"
+   })
+   icon[6].addEventListener('click',()=>{
+    window.location.href="/"
+   })
+  })
   
 
   return (
@@ -182,7 +213,8 @@ export default function MiniDrawer() {
                     justifyContent: 'center',
                   }}
                 >
-                  <i class={icons[index]}></i>
+                
+                  <i className={icons[index]}></i>
                 </ListItemIcon>
                 <ListItemText primary={text.items} sx={{ opacity: open ? 2 : 0 }} />
               </ListItemButton>
@@ -195,142 +227,26 @@ export default function MiniDrawer() {
       <Box component="main" className='Dra_bg' sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
  
-      <div className='container'>
-        <div className='row' >
-          <div className='col-lg-6'>
-            <div className='Upper_d'>
-             <p>Contact Adress:TRhDU8iU...pY55iJ</p> 
-            </div>
-          </div>
-          <div className='col-lg-6'>
-            <div className='Upper_d'>
-             <p>Your Wallet Address:</p> 
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-       <div className='container'>
-        <div className='row top_row' >
-          <div className='col-lg-4'>
-            <div className='row' >
-              <div className='Box_g col-6'>
-                <div className='Inner_g'>
-                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path></svg>
-                
-                </div>
-                
-               
-
-              </div>
-              <div className='col-6 py-0 my-0 mt-2' >
-                <p  className='m-0'> ChargeV2 Balance</p>
-                <p  className='m-0'>0 ChargeV2 ($0)</p>
-                <p  className='m-0'>0 ChargeV2 ($0)</p>  
-                </div>
-
-             
-            </div>
-           
-          </div>
-          <div className='col-lg-4'>
-            <div className='row' >
-              <div className='Box_g col-6'>
-                <div className='Inner_g'>
-                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path></svg>
-                
-                </div>
-                
-               
-
-              </div>
-              <div className='col-6 py-0 my-0 mt-2' >
-                <p  className='m-0'> Total Refferal count</p>
-                <p  className='m-0'>0   ($0)</p>
-                <p  className='m-0'>Earnings ($0)</p>  
-                </div>
-
-             
-            </div>
-           
-          </div>
-          <div className='col-lg-4'>
-            <div className='row' >
-              <div className='Box_g col-6'>
-                <div className='Inner_g'>
-                <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path></svg>
-                
-                </div>
-                
-               
-
-              </div>
-              <div className='col-6 py-0 my-0 mt-2' >
-                <p  className='m-0'>Total Earning</p>
-                <p  className='m-0'>0 ChargeV2 ($0)</p>
-                <p  className='m-0'>At stake: ChargeV2 </p>  
-                </div>
-
-             
-            </div>
-           
-          </div>
-        </div>
-       </div>
-
-       <h4 className='text-center text-cente green'>Current balance</h4>
-       <p className='text-center TExt'>0 trx</p>
-
-       <div className='container' >
-        <div className='row space' >
-          <div className='col-lg-5 ' >
-            <button className='btn Sec_btn  ' >Buy</button>
-          </div>
-          <div className='col-lg-5 ' >
-            <button className='btn Sec_btn  ' >Sell</button>
-          </div>
-        </div>
-       </div>
-       <div className='contaier'>
-        <div className='row mt-3'>
-          <div className='col-lg-6 col-sm-6'>
-          <h6 className='ACC_over'>Account Overveiw</h6>
+   
+        {
+          props.comp == 'Dashboard' ? <Dashboard /> : <div></div> 
+        }
+        {
+           props.comp == 'Stakes' ? <Stakes /> : <div></div>  
+        }
+     {
+           props.comp == 'Transcation' ? <Transcation /> : <div></div>  
       
-
-          </div>
-          <div className='col-lg-6 col-sm-6'>
-         
-          <button className='btn btn-primary success'>succes</button>
-
-          </div>
-        </div>
-       </div>
-       <div className='Line'></div>
-       <div className='row ' >
-       <div className='Regs'>
-        <p>Registered</p>
-        <p>0</p>
-       </div> 
-       </div>
-       <div className='line_2'></div>
-       <div className='row ' >
-       <div className='Regs'>
-        <p>Your TRX Balance</p>
-        <p>0 TRX</p>
-       </div> 
-       </div>
-       <div className='line_2'></div>
-       <div>
-        <p className='Ref'>Refferal URL</p>
-        <div className='flex' >
-        <input id="refer" type="text" class="MuiInputBase-input MuiInput-input" value="https://infallible-mcclintock-9ee99a.netlify.app/login?ref=TRo3XsJmNmBxeFeqqRgFDrFXYxD7zgAHbS"></input><BsBookmarks className='mar'></BsBookmarks>
-        </div>
-       </div>
-
-     
-
-      
+        }
+        {
+           props.comp == 'Withdraw' ? <Withdraw /> : <div></div>  
+        }
+        {
+           props.comp == 'Wallet' ? <Wallet /> : <div></div>  
+        }
+        {
+           props.comp == 'Swaping' ? <Swaping /> : <div></div>  
+        }
       </Box>
     </Box>
   );
