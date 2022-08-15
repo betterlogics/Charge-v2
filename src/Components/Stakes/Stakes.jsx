@@ -95,7 +95,7 @@ function Stakes() {
                   </svg>
                 </div>
               </div>
-              <div className="col-6 py-0 my-0 mt-4">
+              <div className="col-6 py-2 my-0 mt-4">
                 
                 <p className="m-0">Maximum Rewards</p>
                 <p className="m-0">0 ChargeV2 </p>
